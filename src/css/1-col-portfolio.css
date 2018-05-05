@@ -1,0 +1,111 @@
+/*!
+ * Start Bootstrap - 1 Col Portfolio (https://startbootstrap.com/template-overviews/1-col-portfolio)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-1-col-portfolio/blob/master/LICENSE)
+ */
+
+body {
+  background: #EFEFEF;
+  padding-top: 54px;
+}
+#footer {
+  position: fixed;
+  height: 50px;
+  background-color: red;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
+#News_Container
+{
+  max-height: 450px;
+  overflow: auto;
+}
+h1{
+  margin-left: 100 px;
+}
+textarea{
+  display: block;
+}
+@media (min-width: 202px) {
+  body {
+    height: auto;
+    padding-top: 56px;
+  }
+}
+.PhotoRight
+{
+  width: 15%;
+  float:right;
+ 
+}
+#Gallery{
+  margin: 10px 50px;
+}
+#Gallery img{
+  width: 230px;
+  padding: 5px;
+  transition: ls;
+}
+#Gallery img:hover{
+   transform:scale(1.1);
+}
+.PhotoRight img
+{
+  max-width:100%; 
+  height:auto;
+  margin:auto;
+  display: inline-block;
+}
+.PhotoLeft
+{
+  width: 15%;
+  float:left;
+ 
+}
+.PhotoLeft img
+{
+  max-width:100%; 
+  height:auto;
+  margin:auto;
+  display: inline-block;
+}
+.row
+{
+  background:#caebf2;
+  border-style: solid;
+  
+}
+li {
+  display: inline;
+}
+
+h3,img{
+  margin-top: 0;
+}
+.Photo
+{
+ 
+  height:35%;
+  width:35%;
+
+}
+.Photo img
+{
+  max-width:100%; 
+  max-height:100%;
+  margin:auto;
+}
+#LesNouvelles
+{
+  width:100%;
+  max-width:96%;
+  height: 100%;
+  margin-left: 15%;
+  margin-right: 20%;
+}
+
+.pagination {
+  margin-bottom: 15px;
+}
