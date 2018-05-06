@@ -4,11 +4,12 @@ import React from "react";
 
 
 export default class EventsPictures extends React.Component{
-    constructor(){
-        super();
-
+    constructor(props){
+        super(props);
+        console.log("aaa");
+        console.log(props);
         this.state = {
-          pictures :[],
+          pictures :photosStore.getAllPicturesForEvents(this.props.params.events),
         };
         photosStore.on("change", ()=>{
           this.setState({
@@ -16,21 +17,13 @@ export default class EventsPictures extends React.Component{
           });
         });
       }
-     GetPictures(){
-        console.log("tt");
-        console.log(this.props.params.events);
-        var lesImgs=photosStore.getAllPicturesForEvents(this.props.params.events);
-        console.log(lesImgs);
-     //   this.setState({
-     //       pictures:lesImgs,
-     //   });
-       }
      
+  
     render(){
      
-        this.GetPictures(this.props.params.events);
+      ;
         const { pictures } = this.state;
-        console.log(pictures);
+       
         const DesPhotos = pictures.map((photo) =>
       { return <Photo key={photo.id} name={photo.name} nameLarge={photo.nameLarge} title ={photo.title}/>});
         return(

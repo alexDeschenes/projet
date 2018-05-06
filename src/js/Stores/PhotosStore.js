@@ -12,6 +12,18 @@ class PhotosStore extends EventEmitter{
                 id: 1234,
                 },
                 {
+                    name : "AAAQCKnightGarcons2018.jpg",
+                    nameLarge : "AAAQCKnightGarcons2018Large.jpg",
+                    title :"Garçons AAA",
+                    id: 5334,
+                 },
+                 {
+                    name : "AAAQCKnightGarcons2018.jpg",
+                    nameLarge : "AAAQCKnightGarcons2018Large.jpg",
+                    title :"Garçons AAA",
+                    id: 4434,
+                 },
+                {
                     name : "AAFeminAlex.jpg",
                     nameLarge : "AAFeminAlexLarge.jpg",
                     title :"Féminin AA",
@@ -86,12 +98,10 @@ class PhotosStore extends EventEmitter{
         return this.pictures;
     }
     getAllPicturesForEvents(EventName){
-     for (var i=0;i<this.pictures.length;i++)
+     this.imgForEvents=[];   
+     for (var i=0;i<this.pictures.length-1;i++)
         {
-            console.log(this.pictures[i].title);
-            console.log( "events " + EventName);
-            if(this.pictures[i].title=EventName){
-                console.log("yesss");
+            if(this.pictures[i].title==EventName){
                 this.imgForEvents.push(this.pictures[i]);
             }
         }
