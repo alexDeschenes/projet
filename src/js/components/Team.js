@@ -12,7 +12,7 @@ export default class Team extends React.Component{
         const { id } = this.props;
         return(
             <li>
-                <Link to ={"teams/"+id} >
+                <Link to ={"Equipes/"+id} >
                 <img className="photoGal" src={"../photos/"+photo} alt=""/>
                 <p className="EventsTitle">{name}</p></Link>
             </li>

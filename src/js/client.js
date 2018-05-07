@@ -6,6 +6,7 @@ import Equipes from "./pages/Equipes";
 import Photos from "./pages/Photos";
 import Nouvelles from "./pages/Nouvelles";
 import CreateNews from "./pages/CreateNews";
+import CreateTraining from "./pages/CreateTraining";
 import Disponnibilite from "./pages/Disponnibilite";
 import EventsPictures from "./pages/EventsPictures";
 import TeamInfos from "./pages/TeamInfo";
@@ -21,6 +22,7 @@ ReactDOM.render(
         <Route path="/Equipes" component={Equipes}></Route>
         <Route path="/Equipes/:id" component={TeamInfos}></Route>
         <Route path="/CreateNews" component={CreateNews}></Route>
+        <Route path="/CreateTraining" component={CreateTraining}></Route>
         <Route path="/Photos" component={Photos}></Route>
         <Route path="/Photos/:events" component={EventsPictures}></Route>
         <Route path="/Disponnibilite" component={Disponnibilite}></Route>

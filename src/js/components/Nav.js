@@ -19,6 +19,7 @@ export default class Nav extends React.Component{
         
         this.setState({collapsed});
         console.log(this.state.collapsed);
+        
     }
     render(){
         
@@ -55,6 +56,9 @@ export default class Nav extends React.Component{
                 </li>
                 <li className={CreateNewsClass}>
                     <Link  to ="CreateNews" className="nav-link">Creer une nouvelle</Link>
+                </li>
+                <li className={disponnibiliteClass}>
+                    <Link  to ="CreateTraining" className="nav-link">Create Training</Link>
                 </li>
             </ul>
             </div>
